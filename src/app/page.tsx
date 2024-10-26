@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 const mockUrls = [
     "https://utfs.io/f/zMK0CW8weW96GI3VaXclcnb0649MDarTqdPW7Hfgi52CVIsA",
@@ -18,7 +19,13 @@ export default function HomePage() {
                 {
                     mockImages.map((image) => (
                         <div key={image.id} className="w-1/2 p-4 gap-4">
-                            <img src={image.url} alt={image.url} className="w-48" />
+                            <Image
+                                src={image.url}
+                                alt={image.url}
+                                className="w-48 h-48 object-cover rounded-md"
+                                width={200}
+                                height={200}
+                            />
                         </div>
                     ))
                 }

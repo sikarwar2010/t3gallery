@@ -4,6 +4,7 @@
 
 - [x] make a deploy
 - [x] Scafflod basic ui with mock data
+- [x] tidy up bulid process
 - [] Actaually setup a database (vercel postgres)
 - [] attach database with ui
 - [] Add Authentication (w/ Clerk)
